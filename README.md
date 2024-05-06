@@ -6,10 +6,10 @@ Endpoints:
 <br /> e.g: /products/search/mackbook air.
 
 /products/:productId - get the details of any product.
-e.g: /products/B0CX22TZBC.
+<br /> e.g: /products/B0CX22TZBC.
 
 /products/:productId/reviews - get reviews for a product.
-e.g: /products/B0CX22TZBC/reviews.
+<br />e.g: /products/B0CX22TZBC/reviews.
 
 /products/:productId/offers - get offers for a product.
-e.g: /products/B0CX22TZBC/offers.
+<br />e.g: /products/B0CX22TZBC/offers.
