@@ -11,7 +11,7 @@ app.use(express.json());
 app.use('/products', productRoutes);
 
 app.get('/', (req, res) => {
-  res.send("Welcome to Amazon Scraper API.")
+  res.send("<h1>Welcome to Amazon Scraper API.</h1><h2>Endpoints:</h2><h3>/products/search/:searchTerm - search for any product and retrieve info such as productId.</h3><p style='line-height: 0.5px'>e.g: /products/search/mackbook air.</p><h3 style='margin-top: 50px'>/products/:productId - get the details of any product.</h3><p style='line-height: 0.5px'>e.g: /products/B0CX22TZBC.</p><h3 style='margin-top: 50px'>/products/:productId/reviews - get reviews for a product.</h3><p style='line-height: 0.5px'>e.g: /products/B0CX22TZBC/reviews.</p><h3 style='margin-top: 50px'>/products/:productId/offers - get offers for a product.</h3><p style='line-height: 0.5px'>e.g: /products/B0CX22TZBC/offers.</p>");
 });
 
 
