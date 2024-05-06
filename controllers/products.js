@@ -40,3 +40,15 @@ export const getProductOffers = async (req, res) => {
     res.json(error);
   }
 }
+
+export const searchProduct = async (req, res) => {
+  const { searchTerm } = req.params;
+  
+  try {
+    const { data } = await axios.get(`${baseUrl}&url=${scrapeUrl}/s?k=${searchTerm}}`);
+
+    res.json(data);
+  } catch (error) {
+    res.json(error);
+  }
+}
