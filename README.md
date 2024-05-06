@@ -2,7 +2,7 @@ Welcome to Amazon Scraper API.
 An api that gives you access to amazon data in json format
 
 Endpoints:
-/products/search/:searchTerm - search for any product and retrieve info such as productId.
+<br />/products/search/:searchTerm - search for any product and retrieve info such as productId.
 <br /> e.g: /products/search/mackbook air.
 
 /products/:productId - get the details of any product.
