@@ -28,3 +28,15 @@ export const getProductReviews = async (req, res) => {
     res.json(error);
   }
 }
+
+export const getProductOffers = async (req, res) => {
+  const { productId } = req.params;
+
+  try {
+    const { data } = await axios.get(`${baseUrl}&url=${scrapeUrl}/gp/offer-listing/${productId}`);
+
+    res.json(data);
+  } catch (error) {
+    res.json(error);
+  }
+}
