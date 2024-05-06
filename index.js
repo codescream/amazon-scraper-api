@@ -1,6 +1,6 @@
 import express from 'express';
-import request from 'request-promise';
 // const request = require('request-promise');
+import { configDotenv } from 'dotenv';
 
 import productRoutes from './routes/products.js';
 
